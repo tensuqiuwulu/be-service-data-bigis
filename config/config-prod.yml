@@ -1,0 +1,28 @@
+application:
+  name: bigis
+  server: Production
+webserver:
+  port: 9070
+  timeout: 10 # in second
+  rate_limit: 10
+database:
+  tipe: core
+  driver: mysql
+  address: 103.152.242.239
+  username: bigis_bunda
+  password: B19isBupd@
+  port: 3306
+  name: bost_prod
+  maxidle: 10
+  maxopen: 10
+  maxidletime: 5
+  maxlifetime: 10
+  timeout: 5 # in second
+timezone:
+  timezone: Asia/Makassar # Asia/Jakarta, Asia/Makassar, Asia/Jayapura
+log:
+  level: trace # trace, debug, info, warn, error, fatal, panic
+  levels:
+    - info
+    - warn
+    - error
